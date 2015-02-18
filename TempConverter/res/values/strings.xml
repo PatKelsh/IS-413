@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Temp Converter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="fConvert">Convert F to C</string>
+    <string name="cConvert">Convert C to F</string>
+    
+    <string name="fConvertRequest">Enter Temperature in degrees F</string>
+    <string name="fConvertResponse">Temperature in Celsius: </string>
+    
+    <string name="cConvertRequest">Enter Temperature in degrees C</string>
+    <string name="cConvertResponse">Temperature in Fahrenheit: </string>
+    
+    <string name="submit">Submit</string>
+
+</resources>

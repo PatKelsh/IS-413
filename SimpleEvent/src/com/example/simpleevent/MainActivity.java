@@ -3,6 +3,7 @@ package com.example.simpleevent;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,64 +22,74 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		// Defines the TextView that shows the output of a button press
 		tv = (TextView) findViewById(R.id.color_region);
-		
+
+		// Connects to button
 		b1 = (Button) findViewById(R.id.button1);
 		b2 = (Button) findViewById(R.id.button2);
 		b3 = (Button) findViewById(R.id.button3);
 		b4 = (Button) findViewById(R.id.button4);
 
+		// Connects to radio buttons
 		rb1 = (RadioButton) findViewById(R.id.radio_button1);
 		rb2 = (RadioButton) findViewById(R.id.radio_button2);
 		rb3 = (RadioButton) findViewById(R.id.radio_button3);
 		rb4 = (RadioButton) findViewById(R.id.radio_button4);
 
+		// Connects buttons to on click listeners
 		b1.setOnClickListener(new RedListener());
 		rb1.setOnClickListener(new RedListener());
-		
+
 		b2.setOnClickListener(new BlueListener());
 		rb2.setOnClickListener(new BlueListener());
-		
+
 		b3.setOnClickListener(new GreenListener());
 		rb3.setOnClickListener(new GreenListener());
-		
+
 		b4.setOnClickListener(new YellowListener());
 		rb4.setOnClickListener(new YellowListener());
 	}
 
+	// Generates listeners for buttons and controls output
 	private class RedListener implements OnClickListener {
 
 		@Override
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			tv.setBackgroundColor(Color.RED);
+			Log.i("Color", "Color is RED");
 		}
 	}
-	
+
 	private class BlueListener implements OnClickListener {
 
 		@Override
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			tv.setBackgroundColor(Color.BLUE);
+			Log.i("Color", "Color is BLUE");
 		}
 	}
-	
+
 	private class GreenListener implements OnClickListener {
 
 		@Override
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			tv.setBackgroundColor(Color.GREEN);
+			Log.i("Color", "Color is GREEN");
 		}
 	}
-	
+
 	private class YellowListener implements OnClickListener {
 
 		@Override
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			tv.setBackgroundColor(Color.YELLOW);
+			Log.i("Color", "Color is YELLOW");
 		}
 	}
 

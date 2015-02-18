@@ -1,0 +1,18 @@
+
+public class Celsius {
+	
+	private int temperature;
+	
+	public void celsius(int temp){
+		this.temperature = temp;
+	}
+	
+	public int convertToFahrenhiet(){
+		return (temperature * (9/5)) + 32;
+	}
+	
+	public int getTemp(){
+		return temperature;
+	}
+
+}
