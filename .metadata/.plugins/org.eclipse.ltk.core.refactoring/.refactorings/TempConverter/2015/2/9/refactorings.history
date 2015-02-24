@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;show&apos; in &apos;temperature.Fahrenheit.convertToCelsius()&apos; to &apos;conversion&apos;&#x0A;- Original project: &apos;TempConverter&apos;&#x0A;- Original element: &apos;temperature.Fahrenheit.convertToCelsius().show&apos;&#x0A;- Renamed element: &apos;show&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;show&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;temperature{Fahrenheit.java[Fahrenheit~convertToCelsius@show!409!448!413!416!I!0!false" name="conversion" references="true" stamp="1424630373193" version="1.0"/>
+</session>

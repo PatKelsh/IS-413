@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <TextView
+        android:id="@+id/crequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cConvertRequest" />
+    
+    <TextView 
+        android:id="@+id/cresponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crequest"
+        android:text="@string/cConvertResponse"/>
+    
+    <EditText 
+        android:id="@+id/entry"
+        android:layout_width="wrap_content"
+        android:layout_height="10pt"
+        android:inputType="number"
+        android:layout_below="@id/cresponse"/> 
+           
+    <Button 
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entry"
+        android:textSize="8pt"
+        android:text="@string/submit" />
+
+</RelativeLayout>
