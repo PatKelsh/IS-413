@@ -1,17 +1,17 @@
 
 public class Fahrenheit {
-	private int temperature;
+	private double temperature;
 	
-	public Fahrenheit(int temp){
+	public Fahrenheit(double temp){
 		this.temperature = temp;
 	}
 	
-	public int convertToCelsius(){
-		int show = ((temperature-32)*5)/9;
+	public double convertToCelsius(){
+		double show = ((temperature-32)*5)/9;
 		return show;
 	}
 
-	public int getTemp(){
+	public double getTemp(){
 		return temperature;
 	}
 }

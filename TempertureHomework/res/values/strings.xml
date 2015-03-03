@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TemperatureHW</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="submit">Submit</string>
+    <string name="prompt1">Enter Temperature in Celsius to Convert</string>
+    <string name="prompt2">Enter Temperature in Fahrenheit to Convert</string>
+    <string name="switch1">Switch to Celsius</string>
+    <string name="switch2">Switch to Fahrenheit</string>
+
+</resources>

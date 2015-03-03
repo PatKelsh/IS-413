@@ -1,18 +1,18 @@
 
 public class Celsius {
 	
-	private int temperature;
+	private double temperature;
 	
-	public Celsius(int temp){
+	public Celsius(double temp){
 		this.temperature = temp;
 	}
 	
-	public int convertToFahrenhiet(){
+	public double convertToFahrenhiet(){
 //		((temperature-32)*5)/9
 		return ((temperature * 9) / 5) + 32;
 	}
 	
-	public int getTemp(){
+	public double getTemp(){
 		return temperature;
 	}
 

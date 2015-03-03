@@ -9,36 +9,35 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-
 /**
  * 
  * @author Pat Kelsh & Geetheka Mudunuri
- *
+ * 
  */
 public class FahrenheitActivity extends Activity {
-	
+
 	private Button submit;
 	private EditText input;
 	private TextView response;
-	
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState){
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_fahrenheit);
-		
+
 		submit = (Button) findViewById(R.id.submit);
 		input = (EditText) findViewById(R.id.entry);
 		response = (TextView) findViewById(R.id.reponse);
-		
+
 		submit.setOnClickListener(new TempConverter());
 	}
-	
+
 	@Override
-	protected void onStart(){
+	protected void onStart() {
 		super.onStart();
 	}
-	
-	private class TempConverter implements OnClickListener{
+
+	private class TempConverter implements OnClickListener {
 
 		@Override
 		public void onClick(View arg0) {
@@ -46,12 +45,27 @@ public class FahrenheitActivity extends Activity {
 			String temp = input.getText().toString();
 			Log.i("Test", temp);
 			Fahrenheit fahr = new Fahrenheit(Integer.parseInt(temp));
-			Log.i("Temp" , fahr.getTemp() + " goes to " + fahr.convertToCelsius());
+			Log.i("Temp",
+					fahr.getTemp() + " goes to " + fahr.convertToCelsius());
 			response.setText(fahr.convertToCelsius() + " C");
 		}
-		
+
 	}
-	
-	
+
+	protected void onResume() {
+		super.onResume();
+	}
+
+	protected void onPause() {
+		super.onPause();
+	}
+
+	protected void onStop() {
+		super.onStop();
+	}
+
+	protected void onDestory() {
+		super.onDestroy();
+	}
 
 }
