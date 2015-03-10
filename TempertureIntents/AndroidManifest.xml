@@ -23,11 +23,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FahrenheitActivity"
+            android:name="com.is413.tempertureintents.FahrenheitActivity"
             android:label="@string/title_activity_fahrenheit" >
         </activity>
         <activity
-            android:name=".CelsiusActivity"
+            android:name="com.is413.tempertureintents.CelsiusActivity"
             android:label="@string/title_activity_celsius" >
         </activity>
     </application>

@@ -68,6 +68,9 @@ public class DisplayActivity extends Activity {
 			Intent intent) {
 
 		super.onActivityResult(requestCode, responseCode, intent);
+		
+		Double thing = intent.getDoubleExtra("RESULT", -273);
+		Log.i("main avtivity", thing.toString());
 
 		if (responseCode == 4) {
 			Toast.makeText(this, "Error", Toast.LENGTH_LONG).show();
@@ -79,8 +82,8 @@ public class DisplayActivity extends Activity {
 				response.setText(entry.getText().toString() + " degrees Fahrenheit is " + returnedTemp
 						+ " degrees Celsius");
 			} else if (requestCode == CELSIUS_TO_FAHRENHEIT) {
-				response.setText(" degrees Celsius is " + returnedTemp
-						+ "degrees Fahrenheit");
+				response.setText(entry.getText().toString() + " degrees Celsius is " + returnedTemp
+						+ " degrees Fahrenheit");
 			}
 		}
 	}

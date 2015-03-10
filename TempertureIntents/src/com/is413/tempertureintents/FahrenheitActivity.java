@@ -15,32 +15,27 @@ public class FahrenheitActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		setContentView(R.layout.activity_fahrenheit);
-		
+		// setContentView(R.layout.activity_fahrenheit);
+
 		Log.d("activity", "in activity");
 
 		submitButton = (Button) findViewById(R.id.fButton);
-		submitButton.setOnClickListener(new View.OnClickListener() {
 
-			@Override
-			public void onClick(View v) {
+		Intent intent = getIntent();
+		try {
+			Double result = new Fahrenheit(intent.getDoubleExtra("SUBMISSION",
+					-274)).convertToCelsius();
 
-				Intent intent = getIntent();
+			intent.putExtra("RESULT", result.doubleValue());
 
-				try {
-					double result = new Fahrenheit(intent.getDoubleExtra(
-							"SUBMISSION", -274)).convertToCelsius();
+			Double test = intent.getDoubleExtra("RESULT", 273);
+			Log.i("tag", test.toString());
 
-					intent.putExtra("RESULT", result);
+			setResult(3, intent);
+		} catch (Exception e) {
+			setResult(4, intent);
+		}
+		finish();
 
-					setResult(3, intent);
-				} catch (Exception e) {
-					e.printStackTrace();
-					setResult(4, intent);
-				}
-
-				finish();
-			}
-		});
 	}
 }
