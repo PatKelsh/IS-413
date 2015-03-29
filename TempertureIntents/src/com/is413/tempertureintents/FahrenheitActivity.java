@@ -8,6 +8,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * 
+ * @author Pat Kelsh and Geethika Mudunuri
+ *
+ */
 public class FahrenheitActivity extends Activity {
 
 	private Button submitButton;
@@ -15,9 +20,6 @@ public class FahrenheitActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// setContentView(R.layout.activity_fahrenheit);
-
-		Log.d("activity", "in activity");
 
 		submitButton = (Button) findViewById(R.id.fButton);
 
@@ -27,9 +29,6 @@ public class FahrenheitActivity extends Activity {
 					-274)).convertToCelsius();
 
 			intent.putExtra("RESULT", result.doubleValue());
-
-			Double test = intent.getDoubleExtra("RESULT", 273);
-			Log.i("tag", test.toString());
 
 			setResult(3, intent);
 		} catch (Exception e) {

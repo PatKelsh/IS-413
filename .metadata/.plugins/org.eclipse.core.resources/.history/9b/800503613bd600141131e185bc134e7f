@@ -1,0 +1,16 @@
+package gameOfLife;
+
+public class gameBoard {
+	
+	public gameBoard(int height, int width){
+		
+	}
+	
+	public boolean isCellAlive(int x, int y){
+		
+		boolean living = false;
+		
+		return living;
+	}
+
+}

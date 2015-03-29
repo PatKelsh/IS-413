@@ -11,6 +11,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * 
+ * @author Pat Kelsh and Geethika Mudunuri
+ * 
+ */
 public class CelsiusActivity extends Activity {
 
 	private Button submitButton;
@@ -18,9 +23,6 @@ public class CelsiusActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// setContentView(R.layout.activity_fahrenheit);
-
-		Log.d("activity", "in activity");
 
 		submitButton = (Button) findViewById(R.id.fButton);
 
@@ -30,9 +32,6 @@ public class CelsiusActivity extends Activity {
 					-274)).convertToFahrenhiet();
 
 			intent.putExtra("RESULT", result.doubleValue());
-
-			Double test = intent.getDoubleExtra("RESULT", 273);
-			Log.i("tag", test.toString());
 
 			setResult(3, intent);
 		} catch (Exception e) {

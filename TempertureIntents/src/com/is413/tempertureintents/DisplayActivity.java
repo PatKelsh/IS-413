@@ -13,6 +13,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * 
+ * @author Pat Kelsh and Geethika Mudunuri
+ *
+ */
 public class DisplayActivity extends Activity {
 
 	private Button fButton;
@@ -69,9 +74,6 @@ public class DisplayActivity extends Activity {
 
 		super.onActivityResult(requestCode, responseCode, intent);
 		
-		Double thing = intent.getDoubleExtra("RESULT", -273);
-		Log.i("main avtivity", thing.toString());
-
 		if (responseCode == 4) {
 			Toast.makeText(this, "Error", Toast.LENGTH_LONG).show();
 		} else if (responseCode == 3) {

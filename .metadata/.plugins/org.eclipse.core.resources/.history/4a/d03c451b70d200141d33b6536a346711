@@ -1,0 +1,9 @@
+package gameOfLife;
+
+public class gameBoard {
+	
+	public gameBoard(int height, int width){
+		
+	}
+
+}

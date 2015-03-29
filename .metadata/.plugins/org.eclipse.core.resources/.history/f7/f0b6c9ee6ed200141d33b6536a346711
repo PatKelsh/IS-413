@@ -1,0 +1,37 @@
+package gameOfLife;
+
+public class golCell {
+	
+	int x_coordinate;
+	int y_coordinate;
+	private boolean alive;
+	private boolean newborn;
+	
+	public golCell(int x, int y){
+		this.x_coordinate = x;
+		this.y_coordinate = y;
+	}
+	
+	public void neighborCount(){
+		int neighbors = 0;
+		
+		if(neighbors == 0){
+			alive = false;
+		}
+	}
+	
+	public
+
+	public void birth(){
+		this.alive = true;
+		this.newborn = true;
+	}
+	
+	public boolean getAlive(){
+		return alive;
+	}
+	
+	public boolean getNewborn(){
+		return newborn;
+	}
+}

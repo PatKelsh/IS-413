@@ -1,0 +1,57 @@
+package gameOfLife;
+
+public class golCell {
+
+	int x_coordinate;
+	int y_coordinate;
+	private boolean alive;
+	private boolean newborn;
+	private boolean recentlyDead;
+
+	public golCell(int x, int y) {
+		this.x_coordinate = x;
+		this.y_coordinate = y;
+	}
+
+	public void neighborCount() {
+		int neighbors = 0;
+
+		if (neighbors == 0) {
+			if (alive) {
+				kill();
+			}
+		} else if (neighbors > 0 && neighbors < 3) {
+			if (!alive) {
+				birth();
+			}
+		} else {
+			if (alive) {
+				kill();
+			}
+		}
+	}
+
+	private void birth() {
+		this.alive = true;
+		this.newborn = true;
+		this.recentlyDead = false;
+	}
+
+	private void kill() {
+		this.alive = false;
+		this.newborn = false;
+		this.recentlyDead = true;
+	}
+
+	public boolean getAlive() {
+		return alive;
+	}
+
+	public boolean getNewborn() {
+		return newborn;
+	}
+
+	public boolean getRecentlyDead() {
+		return recentlyDead;
+	}
+}

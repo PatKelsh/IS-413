@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;living&apos; in &apos;gameOfLife.gameBoard.willCellSurivive(...)&apos; to &apos;surivive&apos;&#x0A;- Original project: &apos;GameOfLife&apos;&#x0A;- Original element: &apos;gameOfLife.gameBoard.willCellSurivive(int, int).living&apos;&#x0A;- Renamed element: &apos;living&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;living&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;gameOfLife{gameBoard.java[gameBoard~willCellSurivive~I~I@living!151!173!159!164!Z!0!false" name="surivive" references="true" stamp="1427651123110" version="1.0"/>
+</session>

@@ -1,0 +1,21 @@
+package gameOfLife;
+
+public class gameBoard {
+	
+	protected golCell[][] board;
+	
+	public gameBoard(int height, int width){
+		
+		board = new golCell[height][width];
+		
+		
+	}
+	
+	public boolean willCellSurivive(int x, int y){
+		
+		boolean surivive = false;
+		
+		return surivive;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.is413.gameoflife;
+
+public class GoLBoard {
+
+}

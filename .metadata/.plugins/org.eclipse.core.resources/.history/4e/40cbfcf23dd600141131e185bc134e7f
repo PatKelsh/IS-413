@@ -1,0 +1,31 @@
+package gameOfLife;
+
+import java.util.ArrayList;
+
+public class gameBoard {
+	
+	protected golCell[][] board;
+	protected int y, x;
+	
+	public gameBoard(int height, int width){
+		
+		y = height;
+		x = width;
+		board = new golCell[height][width];
+		
+		
+	}
+	
+	public ArrayList<boolean>[x] boardStatus(){
+		
+		return new ArrayList<boolean>[y][x];
+	}
+	
+	public boolean willCellSurivive(int x, int y){
+		
+		boolean surivive = false;
+		
+		return surivive;
+	}
+
+}
