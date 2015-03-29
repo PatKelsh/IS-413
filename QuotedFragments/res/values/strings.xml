@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuotedFragments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Quote1">This is quote 1</string>
+    <string name="quote1">The less effort, the faster and more powerful you will be.</string>
+    <string name="quote2">I hated every minute of training, but I said, \'Don\'t quit. Suffer now and live the rest of your life as a champion.\'</string>
+    <string name="quote3">Men are like steel. When they lose their temper, they lose their worth.</string>
+
+</resources>
