@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HwFragments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="qtitle">Awesome Quotes</string>
+    <string name="qb1">Bill Gates</string>
+    <string name="qb2">J.K. Rowling</string>
+    <string name="qb3">Dalai Lama</string>
+	<string name="qt1">Be nice to nerds. Chances are youll end up working for one.</string>
+	<string name="qt2">It is important to remember that we all have magic inside us</string>
+	<string name="qt3">Do not let that behavior of others destroy your inner peace.</string>
+	
+	<string name="img1">Bill Gates</string>
+	<string name="img2">JK Rowling</string>
+	<string name="img3">Dalai Lama</string>
+</resources>
