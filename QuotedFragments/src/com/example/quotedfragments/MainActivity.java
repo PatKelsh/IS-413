@@ -102,7 +102,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		FragmentTransaction ft = fm.beginTransaction();
 		
 		switch(v.getId()){
-		case R.id.button1:
+		case R.id.radio1:
 	
 			{
 				q1 = new Quote1Fragment();
@@ -110,7 +110,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				ft.commit();
 			} 
 			break;
-		case R.id.button2:
+		case R.id.radio2:
 
 			{
 				q2 = new Quote2Fragment();
@@ -119,7 +119,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			} 
 			break;
 			
-		case R.id.button3:
+		case R.id.radio3:
 
 			{
 				q3 = new Quote3Fragment();
